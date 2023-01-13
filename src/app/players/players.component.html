@@ -1,0 +1,18 @@
+<h2>New York Mets Roster</h2>
+<app-player-search></app-player-search>
+<div id="div_top_hypers">
+    <ul id="ul_top_hypers" class="players">
+    <li *ngFor="let player of players">
+    <div class ="cell">
+        <a routerLink="/detail/{{player.id}}">
+            <div class ="text">
+            <span class="badge"> #{{player.id}} </span>
+            <span class="name">{{player.name}}</span>
+            <br>
+            </div>
+            <img src={{player.Picture}}>
+        </a>
+    </div>
+    </li>
+    </ul>
+</div>
